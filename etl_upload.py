@@ -5,8 +5,8 @@ from openai import OpenAI
 from tiktoken import encoding_for_model
 from docx import Document
 
-oai = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
-sp = create_client(os.environ['SUPABASE_URL'], os.environ['SUPABASE_KEY'])
+oai = OpenAI(api_key=os.environ['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'])
+sp = create_client(os.environ['https://gwfambowedtqxgzlmrgp.supabase.co'], os.environ['eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd3ZmFtYm93ZWR0cXhnemxtcmdwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI0NzkyNDAsImV4cCI6MjA2ODA1NTI0MH0.McxFTMqU89pc5GH18RBjjG9QvSpxc_Iln4xCPUeSJyQ'])
 enc = encoding_for_model("text-embedding-3-small")
 
 KB_PATH = "knowledge_base/**"
